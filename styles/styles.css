@@ -1,0 +1,49 @@
+/*================================== General Styles ==================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap");
+
+@import url("./reset.css");
+@import url("./nav.css");
+@import url("./header.css");
+@import url("./main.css");
+@import url("./card.css");
+@import url("./pagination.css");
+@import url("./footer.css");
+
+:root {
+  --primary: #e50914;
+  --hover: #537cec;
+  --background: #141414;
+  --gray: #8f8f8f;
+  --blue: #0071eb;
+  --green: #00eb7d;
+  --border-radius-05: 0.5em;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+/*================================== General Containers ==================================*/
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.auto-grid {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 2rem;
+}

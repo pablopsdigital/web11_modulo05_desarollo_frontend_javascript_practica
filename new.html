@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="icon" href="./resources/images/icons/favicon.png" type="image/png" />
+    <title>Nodepop | Create advertisement</title>
+
+    <!-- Import css -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/new.css">
+</head>
+
+<body>
+
+    <button onclick="document.getElementById('modal_login').style.display='block'"
+        style="width:auto;">Login</button>
+
+
+    <div id="modal_login" class="modal container grid-login">
+
+        <!-- Start main -->
+        <main class="main">
+
+            <section class="login-container">
+
+                <!-- Start form -->
+                <form action="catalog.html" method="GET">
+
+                    <div class="login-close">
+                        <span onclick="document.getElementById('modal_login').style.display='none'"
+                            class="close" title="Close Modal">&times;</span>
+
+                    </div>
+
+                    <div class="login-title">
+                        <h1>New advertisement</h1>
+                    </div>
+
+                    <div class="form-container">
+                        <div class="email-container">
+                            <label for="name">Name</label>
+                            <input class="input-email" type="text" placeholder="Enter the name"
+                                name="name" required>
+                        </div>
+
+                        <div class="email-container">
+                            <label for="price">Price</label>
+                            <input class="input-email" type="number" name="price" ide="price"
+                                min="1" max="50000" step="any" placeholder="Enter the price"
+                                required>
+                        </div>
+
+                        <div class="password-container">
+                            <label for="type">Choose a type advertisement:</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="buy" name="type" value="buy" checked>
+                                    <label for="buy">Buy</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="sell" name="type" value="sell">
+                                    <label for="sell">Sell</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="password-container">
+                            <label for="foto">Select a file:</label>
+                            <input type="file" id="foto" name="foto">
+                        </div>
+
+                        <input class="input-submit" type="submit" value="Publish">
+
+
+                        <div class="recaptcha-container">
+                            <p class="recaptcha-text">This site uses Google reCAPTCHA to ensure you
+                                are not a robot.
+                                <a href="https://www.google.com/recaptcha/about/">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+                <!-- End form -->
+
+            </section>
+        </main>
+        <!-- End main -->
+
+
+    </div>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('modal_login');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

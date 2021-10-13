@@ -1,0 +1,118 @@
+/*================================== Layout ==================================*/
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1024px;
+}
+
+.left-column {
+  width: 65%;
+  position: relative;
+}
+
+.right-column {
+  width: 35%;
+  margin-top: 100px;
+}
+
+/*================================== Image ==================================*/
+
+.left-column img {
+  width: 100%;
+  /* position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1; */
+  transition: all 0.3s ease;
+}
+
+/*================================== Advertisement info ==================================*/
+.product {
+  border-bottom: 1px solid red;
+  margin-bottom: 20px;
+}
+.right-column .description .type {
+  font-size: 20px;
+  color: #ff5a30;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.description h1 {
+  font-size: 52px;
+  margin-bottom: 10px;
+}
+
+.description .date-published {
+  font-size: 15px;
+}
+.description p {
+  font-size: 16px;
+  color: #86939e;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+/*================================== Price ==================================*/
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.price p {
+  font-size: 26px;
+  margin-right: 20px;
+}
+
+/*================================== Tags ==================================*/
+.tags-container {
+  margin-bottom: 20px;
+}
+
+.tags-container button {
+  border: 2px solid #e1e8ee;
+  border-radius: 6px;
+  padding: 13px 20px;
+  font-size: 14px;
+  color: #5e6977;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin: 3px;
+}
+
+.tags-container button:hover,
+.tags-container button:active,
+.tags-container button:focus {
+  border: 2px solid #86939e;
+  outline: none;
+}
+
+/*================================== Card button ==================================*/
+.cart-btn {
+  display: inline-block;
+  background-color: #ff5a30;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all 0.5s;
+}
+.cart-btn:hover {
+  background-color: #ff1a52;
+}
+
+/*================================== Media Querys ==================================*/
+@media (max-width: 940px) {
+  .container {
+    flex-direction: column;
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  .left-column,
+  .right-column {
+    width: 300px;
+  }
+}

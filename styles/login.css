@@ -1,0 +1,138 @@
+/*================================== General ==================================*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vh;
+  height: 100vw;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close {
+  position: absolute;
+  right: 45px;
+  top: 30px;
+  font-size: 35px;
+  font-weight: blod;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/*================================== Main ==================================*/
+
+.login-title {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.login-title a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #ff5a30;
+  cursor: pointer;
+}
+
+.login-title a:hover {
+  color: #ff1a52;
+}
+
+.login-container {
+  background: white;
+  backdrop-filter: blur(50px);
+  border-radius: 0.5em;
+  padding: 3em;
+  margin: 5% auto 15% auto;
+  width: 50%;
+
+  -webkit-box-shadow: 0px 0px 50px -1px rgba(68, 68, 68, 0.1);
+  box-shadow: 0px 0px 50px -1px rgba(68, 68, 68, 0.1);
+}
+
+.main .login-container h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.form-container .input-email,
+.form-container .input-password {
+  padding: 0em 1em;
+  margin: 1em 0 2em 0;
+  border-radius: 0.5em;
+  outline: none;
+  border: none;
+  background-color: white;
+  border: solid 1px rgb(226, 232, 240);
+  font-weight: 200;
+  height: 60px;
+  width: 100%;
+}
+
+.form-container input[type="email"],
+.form-container input[type="password"] {
+  font-size: 1em;
+}
+
+.form-container .input-submit {
+  color: white;
+  text-decoration: none;
+  margin: 1em 0;
+  padding: 1.25em 3em;
+  font-size: 1em;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: #ff5a30;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 40px;
+}
+
+.form-container .input-submit:hover {
+  background-color: #ff1a52;
+}
+
+.form-container .form-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.reset-password,
+.form-container .form-footer label {
+  color: rgb(177, 177, 177);
+}
+
+.form-container .form-footer input[type="checkbox"]:checked + label {
+  color: #00eb7d;
+  font-weight: 500;
+}
+
+.form-container .form-footer a:hover {
+  text-decoration: none;
+  color: #ff1a52;
+}
+
+.form-container .recaptcha-container p {
+  font-size: 0.75em;
+  font-weight: 400;
+}
+
+.form-container .recaptcha-container p a {
+  text-decoration: none;
+  color: #ff5a30;
+}

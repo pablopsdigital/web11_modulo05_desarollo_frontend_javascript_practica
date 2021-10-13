@@ -1,0 +1,29 @@
+/*================================== Grid ==================================*/
+.main {
+  margin-top: 80px;
+}
+
+.main-cards-list > ul {
+  background-color: var(--background);
+  list-style-type: none;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+/*================================== Container list ==================================*/
+.title-list {
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0.5em 0;
+  margin-bottom: 1em;
+}
+
+/*================================== No results ==================================*/
+
+.no-results {
+  color: rgb(112, 109, 109);
+  text-align: center;
+}
+
+.no-results .emogi {
+  font-size: 50px;
+}
