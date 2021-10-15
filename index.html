@@ -10,11 +10,15 @@
 
     <!-- Import css -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/modal.css">
 
 </head>
 
-<body>
-    <!--Start Navigation-->
+<body class="no-select-text">
+
+    <!--------------------------------------------------------------------------------------------------------- 
+        Start navigation
+    ----------------------------------------------------------------------------------------------------------->
     <nav class="navigation">
 
         <div class="container ">
@@ -42,22 +46,29 @@
                         </a>
                     </div>
                     <div>
-                        <a href="#">
+                        <a class="pro"
+                            onclick="document.getElementById('modal_signup').style.display='block'">
                             <img class="navigation-icon-svg"
                                 src="./resources/svg/shuttle.svg">Mensajes
                         </a>
+
                     </div>
                 </li>
 
                 <li class="navigation-buttons">
                     <div>
-                        <a href="index.html" class="button login-button">Regístrate o
-                            inicia sesión</a>
+                        <button
+                            onclick="document.getElementById('modal_login').style.display='block'"
+                            class="button login-button">Regístrate o
+                            inicia sesión</button>
                     </div>
+
                     <div>
-                        <a href="index.html" class="button load-product-button"><img
-                                class="navigation-icon-svg" src="./resources/svg/add.svg"> Crear
-                            anuncio</a>
+                        <button onclick="document.getElementById('modal_new').style.display='block'"
+                            class="button load-product-button">
+                            <img class="navigation-icon-svg" src="./resources/svg/add.svg">
+                            Crear anuncio
+                        </button>
                     </div>
                 </li>
             </ul>
@@ -67,7 +78,9 @@
     <!--End Navigation-->
 
 
-    <!--Start Header-->
+    <!--------------------------------------------------------------------------------------------------------- 
+        Start header
+    ----------------------------------------------------------------------------------------------------------->
     <header class="header">
         <div class="container">
             <h1>What are you looking for today?
@@ -79,8 +92,9 @@
     <!--End Header-->
 
 
-
-    <!--Start main-->
+    <!--------------------------------------------------------------------------------------------------------- 
+        Start main
+    ----------------------------------------------------------------------------------------------------------->
     <main class="main ">
 
         <!--Start Card Section-->
@@ -283,7 +297,10 @@
     </main>
     <!--End main-->
 
-    <!-- Start footer -->
+
+    <!--------------------------------------------------------------------------------------------------------- 
+        Start footer
+    ----------------------------------------------------------------------------------------------------------->
     <footer class="footer">
         <div class="container">
             <div class="auto-grid">
@@ -336,6 +353,267 @@
         </div>
     </footer>
     <!-- End footer -->
+
+
+
+
+    <!--------------------------------------------------------------------------------------------------------- 
+        Start login modal
+    ----------------------------------------------------------------------------------------------------------->
+    <div id="modal_login" class="modal">
+
+        <section class="modal-content">
+
+            <div class="modal-header">
+                <div class="close"
+                    onclick="document.getElementById('modal_login').style.display='none'"
+                    title="Close Modal">&times;</div>
+
+                <div class="modal-title">
+                    <h1>Welcome Back!</h1>
+                    <p>Don't have an account?
+                        <a onclick="document.getElementById('modal_signup').style.display='block'">Create
+                            Account</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form action="catalog.html" method="GET">
+                    <div class="form-container">
+                        <div class="block-form-container">
+                            <label for="email">Email</label>
+                            <input class="input" type="email" placeholder="Introduce tu mejor email"
+                                name="email" required>
+                        </div>
+
+                        <div class="block-form-container">
+                            <label for="password">Contraseña</label>
+                            <input class="input" type="password"
+                                placeholder="Intorduce tu contraseña" name="password" required>
+                        </div>
+
+                        <div class="remember-section">
+                            <div>
+                                <input class="input-checkbox" type="checkbox" id="remember"
+                                    name="remember">
+                                <label for="remember">Recordar usuario</label>
+                            </div>
+                            <a href="#" class="reset-password">Forgot password?</a>
+                        </div>
+
+                        <div class="modal-button-container">
+                            <input class="input-submit" type="submit" value="Iniciar sesión">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <p class="recaptcha-text">This site uses Google reCAPTCHA to ensure you
+                    are not a robot.
+                    <a href="https://www.google.com/recaptcha/about/">Read more</a>
+                </p>
+            </div>
+
+        </section>
+
+    </div>
+    <!-- End signup modal -->
+
+
+
+    <!--------------------------------------------------------------------------------------------------------- 
+        Start signup modal
+    ----------------------------------------------------------------------------------------------------------->
+    <div id="modal_signup" class="modal">
+
+        <section class="modal-content">
+
+            <div class="modal-header">
+                <div class="close"
+                    onclick="document.getElementById('modal_signup').style.display='none'"
+                    title="Close Modal">&times;</div>
+
+
+                <div class="modal-title">
+                    <h1>SignUp for free!</h1>
+                    <p>Already register? <a href="login.html">Sign In Now</a></p>
+                </div>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form action="catalog.html" method="GET">
+
+                    <div class="form-container">
+                        <div class="block-form-container">
+                            <label for="email">Email</label>
+                            <input class="input" type="email" placeholder="Introduce tu mejor email"
+                                name="email" required>
+                        </div>
+
+                        <div class="block-form-container">
+                            <label for="password">Password</label>
+                            <input class="input" type="password"
+                                placeholder="Intorduce tu contraseña" name="password" required>
+                        </div>
+
+                        <div class="block-form-container">
+                            <label for="password">Confirm Password</label>
+                            <input class="input" type="password"
+                                placeholder="Intorduce tu contraseña" name="password" required>
+                        </div>
+
+                        <div class="remember-section">
+                            <div>
+                                <input class="input-checkbox" type="checkbox" id="remember"
+                                    name="remember">
+                                <label for="remember">Remember me</label>
+                            </div>
+                            <a href="#" class="reset-password">Privacy and policy</a>
+                        </div>
+
+                        <div class="modal-button-container">
+                            <input class="input-submit" type="submit" value="Register">
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <p class="recaptcha-text">This site uses Google reCAPTCHA to ensure you
+                    are not a robot.
+                    <a href="https://www.google.com/recaptcha/about/">Read more</a>
+                </p>
+            </div>
+
+
+
+        </section>
+
+    </div>
+    <!-- End signup modal -->
+
+
+    <!--------------------------------------------------------------------------------------------------------- 
+        Start new advertisement modal
+    ----------------------------------------------------------------------------------------------------------->
+    <div id="modal_new" class="modal">
+
+        <section class="modal-content">
+
+            <!-- Modal header -->
+            <div class="modal-header">
+                <div class="close"
+                    onclick="document.getElementById('modal_new').style.display='none'"
+                    title="Close Modal">&times;</div>
+
+                <div class="modal-title">
+                    <h1>New advertisement</h1>
+                </div>
+            </div>
+
+
+            <!-- Modal body -->
+            <div class="modal-body">
+
+                <form action="catalog.html" method="GET">
+                    <div class="form-container">
+                        <div class="block-form-container">
+                            <label for="name">Name</label>
+                            <input class="input" type="text" placeholder="Enter the name"
+                                name="name" required>
+                        </div>
+
+                        <div class="block-form-container">
+                            <label for="price">Price</label>
+                            <input class="input" type="number" name="price" ide="price" min="1"
+                                max="50000" step="any" placeholder="Enter the price" required>
+                        </div>
+
+                        <div class="colums-2 block-form-container">
+                            <div class="radio-container">
+                                <label for="type">Choose a type advertisement:</label>
+                                <ul class="radio-options">
+                                    <li>
+                                        <label class="radio-option" for="buy">Buy
+                                            <input type="radio" id="buy" name="type" value="buy"
+                                                checked>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <label class="radio-option" for="sell">Sell
+                                            <input type="radio" id="sell" name="type" value="sell">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="input-file-container">
+                                <input type="file" name="foto" id="foto" class="input-file"
+                                    accept="image/png, image/jpeg, image/jpg" />
+                                <label for="foto">
+                                    <img src="./resources/svg/icon-upload.svg" alt="">
+                                    <span>Choose a file&hellip;</span></label>
+                            </div>
+                        </div>
+
+                        <div class="modal-button-container">
+                            <input class=" input-submit" type="submit" value="Publish">
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <p class="recaptcha-text">This site uses Google reCAPTCHA to ensure you
+                    are not a robot.
+                    <a href="https://www.google.com/recaptcha/about/">Read more</a>
+                </p>
+            </div>
+
+
+        </section>
+
+    </div>
+    <!-- End new modal -->
+
+
+    <!--------------------------------------------------------------------------------------------------------- 
+        JavaScript
+    ----------------------------------------------------------------------------------------------------------->
+    <script>
+
+        //Login modal
+        var loginModal = document.getElementById('modal_login');
+        window.onclick = function (event) {
+            if (event.target == loginModal) { loginModal.style.display = "none"; }
+        }
+
+        //Signup modal
+        var signUpModal = document.getElementById('modal_signup');
+        window.onclick = function (event) {
+            if (event.target == signUpModal) { signUpModal.style.display = "none"; }
+        }
+
+        //New modal
+        var newModal = document.getElementById('modal_new');
+        window.onclick = function (event) {
+            if (event.target == newModal) { newModal.style.display = "none"; }
+        }
+
+    </script>
+    <!-- End modals -->
 
 
 </body>
