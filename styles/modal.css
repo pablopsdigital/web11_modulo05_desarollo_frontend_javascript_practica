@@ -176,8 +176,10 @@
   cursor: pointer;
   border-radius: 5px;
   background-color: #c4bfbe;
-  text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
   margin-top: 20px;
   padding: 1rem 2rem;
 }
@@ -198,6 +200,19 @@
 }
 
 /*Buttons ================================================*/
+
+.modal-content button:disabled {
+  background: #dbdbdb;
+}
+
+.modal-content button:disabled:hover {
+  background: #dbdbdb;
+}
+
+.modal-content .modal-button-container {
+  display: flex;
+  justify-content: center;
+}
 
 .modal-content .input-submit {
   color: white;

@@ -19,62 +19,7 @@
     <!--------------------------------------------------------------------------------------------------------- 
         Start navigation
     ----------------------------------------------------------------------------------------------------------->
-    <nav class="navigation">
-
-        <div class="container ">
-
-            <ul class="navigation-list">
-
-                <li class="brand-container">
-                    <a href="#" class="brand">
-                        <img class="brand-img" src="./resources/svg/brand.svg" alt="brand">
-                    </a>
-                </li>
-
-                <li class="search-container">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit">Submit</button>
-                    </form>
-                </li>
-
-                <li class="navigation-options-container">
-                    <div>
-                        <a href="#" class="pro">
-                            <img class="navigation-icon-svg" src="./resources/svg/conversacion.svg">
-                            Prueba ser <span>PRO</span>
-                        </a>
-                    </div>
-                    <div>
-                        <a class="pro"
-                            onclick="document.getElementById('modal_signup').style.display='block'">
-                            <img class="navigation-icon-svg"
-                                src="./resources/svg/shuttle.svg">Mensajes
-                        </a>
-
-                    </div>
-                </li>
-
-                <li class="navigation-buttons">
-                    <div>
-                        <button
-                            onclick="document.getElementById('modal_login').style.display='block'"
-                            class="button login-button">Regístrate o
-                            inicia sesión</button>
-                    </div>
-
-                    <div>
-                        <button onclick="document.getElementById('modal_new').style.display='block'"
-                            class="button load-product-button">
-                            <img class="navigation-icon-svg" src="./resources/svg/add.svg">
-                            Crear anuncio
-                        </button>
-                    </div>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
+    <nav class="navigation"></nav>
     <!--End Navigation-->
 
 
@@ -100,185 +45,16 @@
         <!--Start Card Section-->
         <section class="container">
             <h2 class="title-list">New Products</h2>
-            <ul class="main-cards-list auto-grid">
 
-                <!-- Advertisement list bucle -->
-                <li class="card">
-                    <a href="#" class="card-link" target="_blank">
-                        <img src="./resources/images/advertisements/bike.jpg"
-                            alt="image description">
-                        <div class="card-content">
+            <div class="wrapper">
+                <div class="loader-container"></div>
+                <div class="alert-message-container"></div>
+            </div>
 
-                            <p class="card-price">
-                                00.00<span> EUR</span>
-                            </p>
-                            <h2 class="card-title">
-                                Nombre Anuncio
-                            </h2>
-
-                            <div class="info-details">
-                                <p class="advertisement-type background-sale">Sale</p>
-                                <p class="date">Publication date: mes/día/año</p>
-                            </div>
-                            <div class="tags-details">
-                                <a href="url" class="tag" target="_blank">etiquetas</a>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-                <!-- Advertisement list bucle -->
-                <li class="card">
-                    <a href="#" class="card-link" target="_blank">
-                        <img src="./resources/images/advertisements/iphone.png"
-                            alt="image description">
-                        <div class="card-content">
-
-                            <p class="card-price">
-                                00.00<span> EUR</span>
-                            </p>
-                            <h2 class="card-title">
-                                Nombre Anuncio
-                            </h2>
-
-                            <div class="info-details">
-                                <p class="advertisement-type background-sale">Sale</p>
-                                <p class="date">Publication date: mes/día/año</p>
-                            </div>
-                            <div class="tags-details">
-                                <a href="url" class="tag" target="_blank">etiquetas</a>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-                <!-- Advertisement list bucle -->
-                <li class="card">
-                    <a href="#" class="card-link" target="_blank">
-                        <img src="./resources/images/advertisements/iphone.png"
-                            alt="image description">
-                        <div class="card-content">
-
-                            <p class="card-price">
-                                00.00<span> EUR</span>
-                            </p>
-                            <h2 class="card-title">
-                                Nombre Anuncio
-                            </h2>
-
-                            <div class="info-details">
-                                <p class="advertisement-type background-sale">Sale</p>
-                                <p class="date">Publication date: mes/día/año</p>
-                            </div>
-                            <div class="tags-details">
-                                <a href="url" class="tag" target="_blank">etiquetas</a>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-                <!-- Advertisement list bucle -->
-                <li class="card">
-                    <a href="#" class="card-link" target="_blank">
-                        <img src="./resources/images/advertisements/iphone.png"
-                            alt="image description">
-                        <div class="card-content">
-
-                            <p class="card-price">
-                                00.00<span> EUR</span>
-                            </p>
-                            <h2 class="card-title">
-                                Nombre Anuncio
-                            </h2>
-
-                            <div class="info-details">
-                                <p class="advertisement-type background-sale">Sale</p>
-                                <p class="date">Publication date: mes/día/año</p>
-                            </div>
-                            <div class="tags-details">
-                                <a href="url" class="tag" target="_blank">etiquetas</a>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-                <!-- Advertisement list bucle -->
-                <li class="card">
-                    <a href="#" class="card-link" target="_blank">
-                        <img src="./resources/images/advertisements/surf.webp"
-                            alt="image description">
-                        <div class="card-content">
-
-                            <p class="card-price">
-                                00.00<span> EUR</span>
-                            </p>
-                            <h2 class="card-title">
-                                Nombre Anuncio
-                            </h2>
-
-                            <div class="info-details">
-                                <p class="advertisement-type background-sale">Sale</p>
-                                <p class="date">Publication date: mes/día/año</p>
-                            </div>
-                            <div class="tags-details">
-                                <a href="url" class="tag" target="_blank">etiquetas</a>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-                <!-- Advertisement list bucle -->
-                <li class="card">
-                    <a href="#" class="card-link" target="_blank">
-                        <img src="./resources/images/advertisements/bike.jpg"
-                            alt="image description">
-                        <div class="card-content">
-
-                            <p class="card-price">
-                                00.00<span> EUR</span>
-                            </p>
-                            <h2 class="card-title">
-                                Nombre Anuncio
-                            </h2>
-
-                            <div class="info-details">
-                                <p class="advertisement-type background-sale">Sale</p>
-                                <p class="date">Publication date: mes/día/año</p>
-                            </div>
-                            <div class="tags-details">
-                                <a href="url" class="tag" target="_blank">etiquetas</a>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-                <!-- Advertisement list bucle -->
-                <li class="card">
-                    <a href="#" class="card-link" target="_blank">
-                        <img src="./resources/images/advertisements/bike.jpg"
-                            alt="image description">
-                        <div class="card-content">
-
-                            <p class="card-price">
-                                00.00<span> EUR</span>
-                            </p>
-                            <h2 class="card-title">
-                                Nombre Anuncio
-                            </h2>
-
-                            <div class="info-details">
-                                <p class="advertisement-type background-sale">Sale</p>
-                                <p class="date">Publication date: mes/día/año</p>
-                            </div>
-                            <div class="tags-details">
-                                <a href="url" class="tag" target="_blank">etiquetas</a>
-                            </div>
-                        </div>
-                    </a>
-                </li>
+            <!-- Start Card list container -->
+            <ul class="advertisement-list-container main-cards-list auto-grid">
 
             </ul>
-
         </section>
         <!--End Card Section-->
 
@@ -301,60 +77,8 @@
     <!--------------------------------------------------------------------------------------------------------- 
         Start footer
     ----------------------------------------------------------------------------------------------------------->
-    <footer class="footer">
-        <div class="container">
-            <div class="auto-grid">
-
-                <section class="brand">
-
-                    <a href="catalog.html" class="footer-brand"><img src="./resources/svg/brand.svg"
-                            alt="Brand"></a>
-                    <p class="brand-tagline">&copy; All rights reserved.</p>
-                </section>
-
-                <section class="links1">
-                    <nav class="about-nav">
-                        <ul>
-                            <li><a href="404.html" class="active">About us</a></li>
-                            <li><a href="404.html">Contact</a></li>
-                            <li><a href="404.html">NodePop PRO</a></li>
-                            <li><a href="404.html">Press</a></li>
-                        </ul>
-                    </nav>
-                </section>
-
-                <section class="links2">
-                    <nav class="carrers-nav">
-                        <ul>
-                            <li><a href="404.html" class="active">Carrers</a></li>
-                            <li><a href="404.html">Support</a></li>
-                            <li><a href="404.html">Privacy policy</a></li>
-                            <li><a href="404.html">Cookies</a></li>
-                        </ul>
-                    </nav>
-                </section>
-
-                <section>
-                    <p>Follow us:</p>
-                    <nav class="social-icons">
-                        <ul>
-                            <li><a href="https://www.facebook.com/keepcoding.training/"><img
-                                        src="./resources/svg/icon-facebook.svg" alt=""></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCz-oGx94gqD1lICJQZGniLA"><img
-                                        src="./resources/svg/icon-youtube.svg" alt=""></a></li>
-                            <li><a href="https://twitter.com/intent/follow?screen_name=KeepCoding_"><img
-                                        src="./resources/svg/icon-twitter.svg" alt=""></a></li>
-                            <li><a href="https://www.instagram.com/keepcoding_es/?hl=es"><img
-                                        src="./resources/svg/icon-instagram.svg" alt=""></a></li>
-                        </ul>
-                    </nav>
-                </section>
-            </div>
-        </div>
-    </footer>
+    <footer class="footer"></footer>
     <!-- End footer -->
-
-
 
 
     <!--------------------------------------------------------------------------------------------------------- 
@@ -365,46 +89,46 @@
         <section class="modal-content">
 
             <div class="modal-header">
-                <div class="close"
-                    onclick="document.getElementById('modal_login').style.display='none'"
-                    title="Close Modal">&times;</div>
+                <div class="close" id="close_modal_login" title="Close Modal">&times;</div>
 
                 <div class="modal-title">
                     <h1>Welcome Back!</h1>
                     <p>Don't have an account?
-                        <a onclick="document.getElementById('modal_signup').style.display='block'">Create
-                            Account</a>
+                        <a id="link-signup">CreateAccount</a>
                     </p>
                 </div>
+
+                <div class="alert-login-container"></div>
             </div>
 
             <!-- Modal body -->
             <div class="modal-body">
-                <form action="catalog.html" method="GET">
+                <form id="form-login" novalidate>
                     <div class="form-container">
                         <div class="block-form-container">
-                            <label for="email">Email</label>
-                            <input class="input" type="email" placeholder="Introduce tu mejor email"
-                                name="email" required>
+                            <label for="username">Name</label>
+                            <input class="input" type="text" placeholder="Introduce tu mejor nombre"
+                                name="username" autocomplete="on" required autofocus>
                         </div>
 
                         <div class="block-form-container">
                             <label for="password">Contraseña</label>
                             <input class="input" type="password"
-                                placeholder="Intorduce tu contraseña" name="password" required>
+                                placeholder="Intorduce tu contraseña" name="password"
+                                autocomplete="on" required>
                         </div>
 
                         <div class="remember-section">
                             <div>
-                                <input class="input-checkbox" type="checkbox" id="remember"
-                                    name="remember">
+                                <input class="input-checkbox" type="checkbox" id="remember-login"
+                                    name="remember-login">
                                 <label for="remember">Recordar usuario</label>
                             </div>
                             <a href="#" class="reset-password">Forgot password?</a>
                         </div>
 
                         <div class="modal-button-container">
-                            <input class="input-submit" type="submit" value="Iniciar sesión">
+                            <button class="input-submit" type="submit">Login</button>
                         </div>
                     </div>
                 </form>
@@ -433,51 +157,58 @@
         <section class="modal-content">
 
             <div class="modal-header">
-                <div class="close"
-                    onclick="document.getElementById('modal_signup').style.display='none'"
-                    title="Close Modal">&times;</div>
-
+                <div class="close" id="close_modal_signup" title="Close Modal">&times;</div>
 
                 <div class="modal-title">
                     <h1>SignUp for free!</h1>
-                    <p>Already register? <a href="login.html">Sign In Now</a></p>
+                    <p>Already register? <a id="link-login">Sign In Now</a></p>
                 </div>
+
+                <div class="alert-signup-container"></div>
+
+            </div>
+
+            <!-- Error container -->
+            <div class="error-modal-signup-container">
+
             </div>
 
             <!-- Modal body -->
             <div class="modal-body">
-                <form action="catalog.html" method="GET">
+                <form id="form-signup" novalidate>
 
                     <div class="form-container">
                         <div class="block-form-container">
-                            <label for="email">Email</label>
-                            <input class="input" type="email" placeholder="Introduce tu mejor email"
-                                name="email" required>
+                            <label for="username">Name</label>
+                            <input class="input" type="text" placeholder="Introduce tu mejor nombre"
+                                name="username" autocomplete="on" required autofocus>
                         </div>
 
                         <div class="block-form-container">
                             <label for="password">Password</label>
                             <input class="input" type="password"
-                                placeholder="Intorduce tu contraseña" name="password" required>
+                                placeholder="Intorduce tu contraseña" name="password"
+                                autocomplete="on" required>
                         </div>
 
                         <div class="block-form-container">
-                            <label for="password">Confirm Password</label>
+                            <label for="password-confirm">Confirm Password</label>
                             <input class="input" type="password"
-                                placeholder="Intorduce tu contraseña" name="password" required>
+                                placeholder="Confirma tu contraseña" name="password-confirm"
+                                autocomplete="on" required>
                         </div>
 
                         <div class="remember-section">
                             <div>
-                                <input class="input-checkbox" type="checkbox" id="remember"
-                                    name="remember">
+                                <input class="input-checkbox" type="checkbox"
+                                    id="remember-signup-modal" name="remember-signup-modal">
                                 <label for="remember">Remember me</label>
                             </div>
                             <a href="#" class="reset-password">Privacy and policy</a>
                         </div>
 
                         <div class="modal-button-container">
-                            <input class="input-submit" type="submit" value="Register">
+                            <button class="input-submit" type="submit" disabled>Register</button>
                         </div>
 
                     </div>
@@ -509,30 +240,30 @@
 
             <!-- Modal header -->
             <div class="modal-header">
-                <div class="close"
-                    onclick="document.getElementById('modal_new').style.display='none'"
-                    title="Close Modal">&times;</div>
+                <div class="close" id="close_modal_new" title="Close Modal">&times;</div>
 
                 <div class="modal-title">
                     <h1>New advertisement</h1>
                 </div>
+
+                <div class="alert-new-container"></div>
             </div>
 
 
             <!-- Modal body -->
             <div class="modal-body">
 
-                <form action="catalog.html" method="GET">
+                <form id="form-create-advertisement" novalidate>
                     <div class="form-container">
                         <div class="block-form-container">
                             <label for="name">Name</label>
                             <input class="input" type="text" placeholder="Enter the name"
-                                name="name" required>
+                                name="name" autocomplete="on" required>
                         </div>
 
                         <div class="block-form-container">
                             <label for="price">Price</label>
-                            <input class="input" type="number" name="price" ide="price" min="1"
+                            <input class="input" type="number" name="price" id="price" min="1"
                                 max="50000" step="any" placeholder="Enter the price" required>
                         </div>
 
@@ -557,17 +288,24 @@
                                 </ul>
                             </div>
 
-                            <div class="input-file-container">
-                                <input type="file" name="foto" id="foto" class="input-file"
-                                    accept="image/png, image/jpeg, image/jpg" />
-                                <label for="foto">
-                                    <img src="./resources/svg/icon-upload.svg" alt="">
-                                    <span>Choose a file&hellip;</span></label>
+                            <div class="block-form-container">
+                                <label for="urlPhoto">Url image</label>
+                                <input class="input" type="text" name="urlPhoto" id="urlPhoto"
+                                    placeholder="Enter the url image" required>
                             </div>
+                            <!-- 
+                            <div class="input-file-container">
+                                <input type="file" name="photo" id="upload-photo-input"
+                                    class="input-file" accept="image/png, image/jpeg, image/jpg" />
+                                <label for="upload-photo-input">
+                                    <img src="./resources/svg/icon-upload.svg" alt="">
+                                    <span id="fileName">Choose a file&hellip;</span>
+                                </label>
+                            </div> -->
                         </div>
 
                         <div class="modal-button-container">
-                            <input class=" input-submit" type="submit" value="Publish">
+                            <button class="input-submit" type="submit">Publish</button>
                         </div>
 
                     </div>
@@ -592,29 +330,15 @@
     <!--------------------------------------------------------------------------------------------------------- 
         JavaScript
     ----------------------------------------------------------------------------------------------------------->
-    <script>
-
-        //Login modal
-        var loginModal = document.getElementById('modal_login');
-        window.onclick = function (event) {
-            if (event.target == loginModal) { loginModal.style.display = "none"; }
-        }
-
-        //Signup modal
-        var signUpModal = document.getElementById('modal_signup');
-        window.onclick = function (event) {
-            if (event.target == signUpModal) { signUpModal.style.display = "none"; }
-        }
-
-        //New modal
-        var newModal = document.getElementById('modal_new');
-        window.onclick = function (event) {
-            if (event.target == newModal) { newModal.style.display = "none"; }
-        }
-
-    </script>
-    <!-- End modals -->
-
+    <script type="module" src="./js/navigation.js"></script>
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/modalLogin.js"></script>
+    <script type="module" src="./js/modalSignup.js"></script>
+    <script type="module" src="./js/modalCreate.js"></script>
+    <script type="module" src="./js/signup.js"></script>
+    <script type="module" src="./js/login.js"></script>
+    <script type="module" src="./js/createAdvertisement.js"></script>
+    <script type="module" src="./js/footer.js"></script>
 
 </body>
 

@@ -3,6 +3,12 @@
   margin-top: 80px;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .main-cards-list > ul {
   background-color: var(--background);
   list-style-type: none;
