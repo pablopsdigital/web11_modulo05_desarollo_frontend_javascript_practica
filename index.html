@@ -16,16 +16,11 @@
 
 <body class="no-select-text">
 
-    <!--------------------------------------------------------------------------------------------------------- 
-        Start navigation
-    ----------------------------------------------------------------------------------------------------------->
+    <!-- Start navigation -->
     <nav class="navigation"></nav>
-    <!--End Navigation-->
 
 
-    <!--------------------------------------------------------------------------------------------------------- 
-        Start header
-    ----------------------------------------------------------------------------------------------------------->
+    <!-- Start header -->
     <header class="header">
         <div class="container">
             <h1>What are you looking for today?
@@ -34,12 +29,8 @@
             </p>
         </div>
     </header>
-    <!--End Header-->
 
-
-    <!--------------------------------------------------------------------------------------------------------- 
-        Start main
-    ----------------------------------------------------------------------------------------------------------->
+    <!-- Start main -->
     <main class="main ">
 
         <!--Start Card Section-->
@@ -52,9 +43,7 @@
             </div>
 
             <!-- Start Card list container -->
-            <ul class="advertisement-list-container main-cards-list auto-grid">
-
-            </ul>
+            <ul class="advertisement-list-container main-cards-list auto-grid"></ul>
         </section>
         <!--End Card Section-->
 
@@ -74,270 +63,20 @@
     <!--End main-->
 
 
-    <!--------------------------------------------------------------------------------------------------------- 
-        Start footer
-    ----------------------------------------------------------------------------------------------------------->
+    <!-- Start footer -->
     <footer class="footer"></footer>
-    <!-- End footer -->
 
+    <!-- Start login modal -->
+    <div id="modal-container-login"></div>
+    <div id="modal-container-signup"></div>
+    <div id="modal-container-create"></div>
 
-    <!--------------------------------------------------------------------------------------------------------- 
-        Start login modal
-    ----------------------------------------------------------------------------------------------------------->
-    <div id="modal_login" class="modal">
-
-        <section class="modal-content">
-
-            <div class="modal-header">
-                <div class="close" id="close_modal_login" title="Close Modal">&times;</div>
-
-                <div class="modal-title">
-                    <h1>Welcome Back!</h1>
-                    <p>Don't have an account?
-                        <a id="link-signup">CreateAccount</a>
-                    </p>
-                </div>
-
-                <div class="alert-login-container"></div>
-            </div>
-
-            <!-- Modal body -->
-            <div class="modal-body">
-                <form id="form-login" novalidate>
-                    <div class="form-container">
-                        <div class="block-form-container">
-                            <label for="username">Name</label>
-                            <input class="input" type="text" placeholder="Introduce tu mejor nombre"
-                                name="username" autocomplete="on" required autofocus>
-                        </div>
-
-                        <div class="block-form-container">
-                            <label for="password">Contraseña</label>
-                            <input class="input" type="password"
-                                placeholder="Intorduce tu contraseña" name="password"
-                                autocomplete="on" required>
-                        </div>
-
-                        <div class="remember-section">
-                            <div>
-                                <input class="input-checkbox" type="checkbox" id="remember-login"
-                                    name="remember-login">
-                                <label for="remember">Recordar usuario</label>
-                            </div>
-                            <a href="#" class="reset-password">Forgot password?</a>
-                        </div>
-
-                        <div class="modal-button-container">
-                            <button class="input-submit" type="submit">Login</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <p class="recaptcha-text">This site uses Google reCAPTCHA to ensure you
-                    are not a robot.
-                    <a href="https://www.google.com/recaptcha/about/">Read more</a>
-                </p>
-            </div>
-
-        </section>
-
-    </div>
-    <!-- End signup modal -->
-
-
-
-    <!--------------------------------------------------------------------------------------------------------- 
-        Start signup modal
-    ----------------------------------------------------------------------------------------------------------->
-    <div id="modal_signup" class="modal">
-
-        <section class="modal-content">
-
-            <div class="modal-header">
-                <div class="close" id="close_modal_signup" title="Close Modal">&times;</div>
-
-                <div class="modal-title">
-                    <h1>SignUp for free!</h1>
-                    <p>Already register? <a id="link-login">Sign In Now</a></p>
-                </div>
-
-                <div class="alert-signup-container"></div>
-
-            </div>
-
-            <!-- Error container -->
-            <div class="error-modal-signup-container">
-
-            </div>
-
-            <!-- Modal body -->
-            <div class="modal-body">
-                <form id="form-signup" novalidate>
-
-                    <div class="form-container">
-                        <div class="block-form-container">
-                            <label for="username">Name</label>
-                            <input class="input" type="text" placeholder="Introduce tu mejor nombre"
-                                name="username" autocomplete="on" required autofocus>
-                        </div>
-
-                        <div class="block-form-container">
-                            <label for="password">Password</label>
-                            <input class="input" type="password"
-                                placeholder="Intorduce tu contraseña" name="password"
-                                autocomplete="on" required>
-                        </div>
-
-                        <div class="block-form-container">
-                            <label for="password-confirm">Confirm Password</label>
-                            <input class="input" type="password"
-                                placeholder="Confirma tu contraseña" name="password-confirm"
-                                autocomplete="on" required>
-                        </div>
-
-                        <div class="remember-section">
-                            <div>
-                                <input class="input-checkbox" type="checkbox"
-                                    id="remember-signup-modal" name="remember-signup-modal">
-                                <label for="remember">Remember me</label>
-                            </div>
-                            <a href="#" class="reset-password">Privacy and policy</a>
-                        </div>
-
-                        <div class="modal-button-container">
-                            <button class="input-submit" type="submit" disabled>Register</button>
-                        </div>
-
-                    </div>
-                </form>
-            </div>
-
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <p class="recaptcha-text">This site uses Google reCAPTCHA to ensure you
-                    are not a robot.
-                    <a href="https://www.google.com/recaptcha/about/">Read more</a>
-                </p>
-            </div>
-
-
-
-        </section>
-
-    </div>
-    <!-- End signup modal -->
-
-
-    <!--------------------------------------------------------------------------------------------------------- 
-        Start new advertisement modal
-    ----------------------------------------------------------------------------------------------------------->
-    <div id="modal_new" class="modal">
-
-        <section class="modal-content">
-
-            <!-- Modal header -->
-            <div class="modal-header">
-                <div class="close" id="close_modal_new" title="Close Modal">&times;</div>
-
-                <div class="modal-title">
-                    <h1>New advertisement</h1>
-                </div>
-
-                <div class="alert-new-container"></div>
-            </div>
-
-
-            <!-- Modal body -->
-            <div class="modal-body">
-
-                <form id="form-create-advertisement" novalidate>
-                    <div class="form-container">
-                        <div class="block-form-container">
-                            <label for="name">Name</label>
-                            <input class="input" type="text" placeholder="Enter the name"
-                                name="name" autocomplete="on" required>
-                        </div>
-
-                        <div class="block-form-container">
-                            <label for="price">Price</label>
-                            <input class="input" type="number" name="price" id="price" min="1"
-                                max="50000" step="any" placeholder="Enter the price" required>
-                        </div>
-
-                        <div class="colums-2 block-form-container">
-                            <div class="radio-container">
-                                <label for="type">Choose a type advertisement:</label>
-                                <ul class="radio-options">
-                                    <li>
-                                        <label class="radio-option" for="buy">Buy
-                                            <input type="radio" id="buy" name="type" value="buy"
-                                                checked>
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </li>
-
-                                    <li>
-                                        <label class="radio-option" for="sell">Sell
-                                            <input type="radio" id="sell" name="type" value="sell">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="block-form-container">
-                                <label for="urlPhoto">Url image</label>
-                                <input class="input" type="text" name="urlPhoto" id="urlPhoto"
-                                    placeholder="Enter the url image" required>
-                            </div>
-                            <!-- 
-                            <div class="input-file-container">
-                                <input type="file" name="photo" id="upload-photo-input"
-                                    class="input-file" accept="image/png, image/jpeg, image/jpg" />
-                                <label for="upload-photo-input">
-                                    <img src="./resources/svg/icon-upload.svg" alt="">
-                                    <span id="fileName">Choose a file&hellip;</span>
-                                </label>
-                            </div> -->
-                        </div>
-
-                        <div class="modal-button-container">
-                            <button class="input-submit" type="submit">Publish</button>
-                        </div>
-
-                    </div>
-                </form>
-            </div>
-
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <p class="recaptcha-text">This site uses Google reCAPTCHA to ensure you
-                    are not a robot.
-                    <a href="https://www.google.com/recaptcha/about/">Read more</a>
-                </p>
-            </div>
-
-
-        </section>
-
-    </div>
-    <!-- End new modal -->
-
-
-    <!--------------------------------------------------------------------------------------------------------- 
-        JavaScript
-    ----------------------------------------------------------------------------------------------------------->
+    <!-- JavaScript -->
     <script type="module" src="./js/navigation.js"></script>
     <script type="module" src="./js/index.js"></script>
     <script type="module" src="./js/modalLogin.js"></script>
     <script type="module" src="./js/modalSignup.js"></script>
     <script type="module" src="./js/modalCreate.js"></script>
-    <script type="module" src="./js/signup.js"></script>
-    <script type="module" src="./js/login.js"></script>
-    <script type="module" src="./js/createAdvertisement.js"></script>
     <script type="module" src="./js/footer.js"></script>
 
 </body>

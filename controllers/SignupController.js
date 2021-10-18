@@ -40,10 +40,14 @@ export default class SignupController {
         const data = new FormData(this);
         const username = data.get("username");
         const password = data.get("password");
+        const url = new URLSearchParams(window.location.search);
+        const next = url.get("next") || "/";
 
         try {
           const result = await UserService.signupUser(username, password);
           PubSub.publish(PubSub.events.SHOW_SUCCESS, "Registered user");
+          const initSession = await UserService.loginUser(username, password);
+          location.href = next;
         } catch (error) {
           PubSub.publish(PubSub.events.SHOW_ERROR, error);
         }

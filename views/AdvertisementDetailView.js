@@ -1,5 +1,4 @@
 "use strict";
-import UserService from "../services/UserService.js";
 
 export function advertisementDetailView(advertisement) {
   if (advertisement === null) {
@@ -13,7 +12,7 @@ export function advertisementDetailView(advertisement) {
   }
 
   let buttons = "";
-  if (UserService.userIsAuthenticed) {
+  if (advertisement.canBeDeleted) {
     buttons = `
         <button class="edit-button">
             <img class="arrow-icon-svg" src="./resources/svg/icon-edit.svg">
@@ -23,8 +22,6 @@ export function advertisementDetailView(advertisement) {
             <img class="arrow-icon-svg" src="./resources/svg/icon-delete.svg">
         </button>
         `;
-  } else {
-    buttons = "";
   }
 
   let type = "";

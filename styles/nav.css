@@ -110,21 +110,28 @@
   cursor: pointer;
 }
 
+.navigation .navigation-list .close-sesion-button {
+  color: #ff5a30;
+  background-color: white;
+}
+
 .navigation .navigation-list .login-button {
   color: #ff5a30;
   background-color: white;
 }
 
-.navigation .navigation-list .load-product-button,
+.navigation .navigation-list .close-sesion-button:hover,
+.navigation .navigation-list .load-product-button:hover,
 .navigation .navigation-list .login-button:hover {
   color: white;
   background-color: #ff1a52;
   border: 1px solid #ff1a52;
 }
 
-.navigation .navigation-list .load-product-button:hover {
-  border: 1px solid #ff1a52;
-  background-color: #ff1a52;
+.navigation .navigation-list .load-product-button {
+  color: white;
+  border: 1px solid #ff5a30;
+  background-color: #ff5a30;
 }
 
 /*================================== Media ==================================*/

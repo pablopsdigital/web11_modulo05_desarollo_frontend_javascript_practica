@@ -15,6 +15,20 @@ export default {
     localStorage.setItem("AUTH_TOKEN", token);
   },
 
+  getUserById: async function (userId) {
+    const url = `http://localhost:8000/api/users/${userId}`;
+    const response = await fetch(url);
+
+    if (response.ok) {
+      const userData = await response.json();
+      return userData;
+    } else {
+      if (response.status === 404) {
+        return null;
+      }
+    }
+  },
+
   userIsAuthenticed: function () {
     return localStorage.getItem("AUTH_TOKEN") !== null;
   },

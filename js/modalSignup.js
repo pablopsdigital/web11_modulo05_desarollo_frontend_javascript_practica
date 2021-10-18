@@ -1,14 +1,24 @@
 "use strict";
 
+import SignupController from "../controllers/SignupController.js";
+import MessageController from "../controllers/MessageController.js";
+import ModalSignupController from "../controllers/ModalSignupController.js";
+
 window.addEventListener("DOMContentLoaded", function () {
-  //Open UI Button
+  let modalContainer = document.querySelector("#modal-container-signup");
+  new ModalSignupController(modalContainer);
+
+  //Modal container
   let signUpModal = document.getElementById("modal_signup");
-  signUpModal.addEventListener("click", async function (event) {
-    event.preventDefault();
-    if (event.target == signUpModal) {
-      signUpModal.style.display = "none";
-    }
-  });
+
+  //Modal form
+  const form = document.querySelector("#form-signup");
+  new SignupController(form);
+
+  const alertSignupContainer = document.querySelector(
+    ".alert-signup-container"
+  );
+  new MessageController(alertSignupContainer);
 
   //Close Modal Button
   let buttonCloseSignupModal = document.getElementById("close_modal_signup");

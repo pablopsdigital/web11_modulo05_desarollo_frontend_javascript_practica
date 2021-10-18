@@ -1,18 +1,22 @@
 "use strict";
 
-export function navView() {
-  let buttons = "";
-  //   if (UserService.userIsAuthenticed) {
-  //     buttons = `
-  //         <button onclick="document.getElementById('modal_new').style.display='block'"
-  //             class="button load-product-button">
-  //             <img class="navigation-icon-svg" src="./resources/svg/add.svg">
-  //             Crear anuncio
-  //         </button>
-  //         `;
-  //   } else {
-  //     buttons = "";
-  //   }
+export function navView(user) {
+  let buttonCreateAdvertisement = "";
+  let buttonLoginSession = "";
+
+  if (user.id !== null) {
+    buttonCreateAdvertisement = `
+        <button onclick="document.getElementById('modal_new').style.display='block'"
+            class="button load-product-button">
+            <img class="navigation-icon-svg" src="./resources/svg/add.svg">
+            Crear anuncio
+        </button>
+        `;
+
+    buttonLoginSession = `<button class="button close-sesion-button">Logout - <span>${user.username}</span></button>`;
+  } else {
+    buttonLoginSession = `<button class="button login-button">Login / Register</button>`;
+  }
 
   return `<div class="container ">
 
@@ -48,13 +52,9 @@ export function navView() {
                 </li>
 
                 <li class="navigation-buttons">
-                    <div>
-                        <button
-                            onclick="document.getElementById('modal_login').style.display='block'"
-                            class="button login-button">Inicia sesión</button>
-                    </div>
+                    <div>${buttonLoginSession}</div>
 
-                    <div>${buttons}</div>
+                    <div>${buttonCreateAdvertisement}</div>
                 </li>
             </ul>
 
